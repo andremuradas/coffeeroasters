@@ -1,0 +1,72 @@
+body
+{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.title_alternate_big
+{
+    font-family: 'Fraunces', serif;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    color: #83888F;
+}
+
+.h1
+{
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+    color: #83888F;
+}
+
+.h2
+{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    color: #83888F;
+}
+
+
+.h3
+{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #83888F;
+}
+
+.h4
+{
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #83888F;
+    color: #333D4B;
+}
+
+.main_button_default
+{
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #0E8784;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #FEFCF7;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

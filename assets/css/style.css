@@ -1,0 +1,371 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #FEFCF7;
+}
+
+.standard_width_1
+{
+    max-width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin: auto;
+}
+
+.standard_width_2
+{
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.margin_bottom
+{
+    margin-bottom: 200px;
+}
+
+.two_columns
+{
+    flex: 1;
+    display: flex;
+}
+
+.left
+{
+    flex: 1;
+}
+
+.right
+{
+    flex: 1;
+}
+
+footer
+{
+    margin-bottom: 88px;
+}
+
+.menu
+{
+    height: 113px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .right
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .right ul
+{
+    display: flex;
+}
+
+.menu .right ul li
+{
+    list-style: none;
+    margin-right: 33px;
+}
+
+.menu .right ul li:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.menu .right ul li a
+{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.92px;
+    color: #83888F;
+}
+
+.menu .right ul li a:hover
+{
+    color: #333D4B;
+}
+
+.intro.margin_bottom
+{
+    margin-bottom: 183px;
+}
+
+
+.intro_container
+{
+    height: 600px;
+    border-radius: 10px;
+    background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_container .h1
+{
+    color: #FEFCF7;
+    width: 491px;
+    margin-bottom: 32px;
+}
+
+.intro_container p
+{
+    color: rgba(254, 252, 247, 0.8);
+    width: 491px;
+    margin-bottom: 56px;
+
+}
+
+.collection_container
+{
+    position: relative;
+}
+
+.collection_bg
+{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    z-index: -1;
+
+}
+
+.collection_bg p
+{
+    background-image: linear-gradient(360deg, rgba(254,252,247,0), rgba(212,213,212,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collection_cards
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.collection_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+}
+
+.collection_card img
+{
+    width: inherit;
+    margin-bottom: 72px;
+}
+
+.collection_card h4
+{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.collection_card p
+{
+    text-align: center;
+}
+
+.why.margin_bottom
+{
+    margin-bottom: 350px;
+}
+
+
+.why
+{
+    position: relative;
+
+}
+
+
+.why_container
+{
+    height: 577px;
+    border-radius: 10px;
+    background-color: #2C343E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why_container .h2
+{
+    margin-top: 100px;
+    margin-bottom: 32px;
+    color: #FEFCF7;
+}
+
+.why_container p
+{
+    width: 530px;
+    color: rgba(254, 252, 247, 0.8);
+    text-align: center;
+}
+
+.why_cards
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 345px;
+    
+}
+
+.why_card
+{
+    width: 350px;
+    height: 382px;
+    background-color: #0E8784;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.why_card_img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 202px;
+}
+
+.why_card_img img
+{
+    margin-top: 11px;
+}
+
+.why_card h4, .why_card p
+{
+    text-align: center;
+    width: 255px;
+    color: #FEFCF7;
+}
+
+.why_card h4
+{
+    margin-bottom: 24px;
+}
+
+
+
+.how_container .h4
+{
+    color: #83888F;
+    margin-bottom: 80px;
+}
+
+.how_cards
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.how_card
+{
+    width: 285px;
+    height: 453px;
+    margin-right: 95px;
+}
+
+.how_card:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.timeline
+{
+    z-index: -1;
+    width: 760px;
+    height: 2px;
+    background-color: #FDD6BA;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.circle
+{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #0E8784;
+    background-color: #FEFCF7;
+    margin-bottom: 67px;
+}
+
+
+.how_card .h1
+{
+    color: #FDD6BA;
+    margin-bottom: 38px;
+}
+
+.how_card .h3
+{
+    width: 255px;
+    color: #333D4B;
+    margin-bottom: 42px;
+}
+
+.how_card .p
+{
+    color: #333D4B;
+}
+
+
+.footer
+{
+    height: 120px;
+    background-color: #2C343E;
+}
+
+.footer_container
+{
+    height: inherit;
+    display: flex;
+}
+
+.footer_container .col_01
+{
+    height: inherit;
+    width: 255px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_container .col_02
+{
+    height: inherit;
+    width: 570px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_container .col_03
+{
+    height: inherit;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
