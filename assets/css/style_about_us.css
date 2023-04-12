@@ -1,8 +1,7 @@
 .intro_about_us.margin_bottom
 {
-    margin-bottom: 183px;
+    margin-bottom: 185px;
 }
-
 
 .intro_about_us_container
 {
@@ -14,11 +13,11 @@
     justify-content: center;
 }
 
-.intro_about_us_container .h1
+.intro_about_us_container .h2
 {
     color: #FEFCF7;
     width: 491px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .intro_about_us_container p
@@ -28,6 +27,14 @@
 
 }
 
+.commitment .left img
+{
+    border-radius: 8px;
+}
+.commitment
+{
+    margin-bottom: 249px;
+}
 .commitment .right 
 {
     display: flex;
@@ -38,4 +45,92 @@
 {
     color: #333D4B;
     margin-bottom: 32px;
+}
+.commitment .right
+{
+    padding-left: 16px;
+}
+
+.commitment .right p
+{
+    padding-right: 8px;
+    color: rgba(51, 61, 75, 0.8);
+}
+
+.quality.margin_bottom 
+{
+    margin-bottom: 168px;
+}
+.quality
+{
+    height: 474px;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.quality .left h2
+{
+    color: #FEFCF7;
+    margin-top: 88px;
+    margin-bottom: 32px;
+}
+
+
+
+.quality .left p
+{
+    color: rgba(254, 252, 247, 0.8);
+    padding-right: 16px;
+}
+
+.quality .right
+{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.quality .right img
+{
+    position: absolute;
+    top: -89px;
+    border-radius: 8px;
+}
+
+.headquarters_container .h4
+{
+    color: #83888F;
+    margin-bottom: 72px;
+}
+
+.headquarters_cards
+{
+    display: flex;
+}
+
+.headquarters_card
+{
+    width: 285px;
+    margin-right: 95px;
+}
+
+.headquarters_card:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.headquarters_card_img
+{
+    height: 97px;
+}
+
+.headquarters_card .h3
+{
+    margin-bottom: 24px;
+    color: #333D4B;
+}
+
+.headquarters.margin_bottom
+{
+    margin-bottom: 168px;
 }
