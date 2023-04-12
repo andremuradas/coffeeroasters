@@ -1,0 +1,41 @@
+.intro_about_us.margin_bottom
+{
+    margin-bottom: 183px;
+}
+
+
+.intro_about_us_container
+{
+    height: 450px;
+    border-radius: 10px;
+    background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_about_us_container .h1
+{
+    color: #FEFCF7;
+    width: 491px;
+    margin-bottom: 32px;
+}
+
+.intro_about_us_container p
+{
+    color: rgba(254, 252, 247, 0.8);
+    width: 491px;
+
+}
+
+.commitment .right 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.commitment .right .h2
+{
+    color: #333D4B;
+    margin-bottom: 32px;
+}

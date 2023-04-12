@@ -360,6 +360,7 @@ footer
     width: 570px;
     display: flex;
     align-items: center;
+    padding-left: 80px;
 }
 
 .footer_container .col_03
@@ -368,4 +369,48 @@ footer
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+
+
+.col_02 ul
+{
+    display: flex;
+}
+
+.col_02 ul li
+{
+    list-style: none;
+}
+
+.col_02 ul li a
+{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #83888F;
+    margin-right: 33px;
+}
+
+.col_02 ul li a:hover
+{
+    color: #FEFCF7;
+}
+
+
+
+.col_03 a
+{
+    margin-left: 24px;
+}
+
+
+.col_03 a:hover svg
+{
+    fill: #FDD6BA;
+}
+
+.col_03 a svg
+{
+    display: block;
 }

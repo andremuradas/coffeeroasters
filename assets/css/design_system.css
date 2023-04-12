@@ -70,3 +70,13 @@ body
     justify-content: center;
     align-items: center;
 }
+
+.main_button_default:hover
+{
+    background-color: #66D2CF;
+}
+
+.main_button_disabled
+{
+    background-color: #E2DEDB;
+}
