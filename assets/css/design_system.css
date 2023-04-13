@@ -54,12 +54,14 @@ body
     color: #333D4B;
 }
 
-.main_button_default
+
+
+.main_button_default,
+.main_button_disabled
 {
     width: 217px;
     height: 56px;
     border-radius: 6px;
-    background-color: #0E8784;
     font-family: 'Fraunces', serif;
     font-size: 18px;
     font-weight: 900;
@@ -71,6 +73,11 @@ body
     align-items: center;
 }
 
+.main_button_default
+{
+    background-color: #0E8784;
+}
+
 .main_button_default:hover
 {
     background-color: #66D2CF;
@@ -79,4 +86,50 @@ body
 .main_button_disabled
 {
     background-color: #E2DEDB;
+    cursor: default;
+}
+
+
+.menu_closed_disabled
+{
+    opacity: 0.5;
+}
+
+
+.arrow_up
+{
+    transform: rotate(180deg);
+}
+
+.big_selection_option_default
+{
+    width: 228px;
+    height: 250px;
+    background-color: #F4F1EB;
+    border-radius: 8px;
+    padding-top: 28px;
+    padding-left: 26px;
+    padding-right: 26px;
+    cursor: pointer;
+}
+
+.big_selection_option_default .h4
+{
+    margin-bottom: 24px;
+}
+
+.big_selection_option_default:hover
+{
+    background-color: #FDD6BA;
+}
+
+.big_selection_option_active
+{
+    background-color: #0E8784;
+}
+
+.big_selection_option_active,
+.big_selection_option_active .h4
+{
+    color: #FFFFFF;
 }

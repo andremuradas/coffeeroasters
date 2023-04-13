@@ -1,0 +1,191 @@
+.intro_create_plan.margin_bottom
+{
+    margin-bottom: 177px;
+}
+
+
+.how.margin_bottom
+{
+    margin-bottom: 160px;
+}
+
+.order.margin_bottom
+{
+    margin-bottom: 168px;
+}
+
+.intro_create_plan_container
+{
+    height: 450px;
+    border-radius: 10px;
+    background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_create_plan_container .h1
+{
+    color: #FEFCF7;
+    width: 491px;
+    margin-bottom: 24px;
+}
+
+.intro_create_plan_container p
+{
+    color: rgba(254, 252, 247, 0.8);
+    width: 450px;
+
+}
+
+.how
+{
+    background-color: #2C343E;
+    border-radius: 10px;
+    height: 653px;
+    display: flex;
+    align-items: center;
+}
+.how_cards
+{
+    position: relative;
+    margin: 0;
+}
+
+.timeline
+{
+    background-color: #FDD6BA !important;
+    z-index: 0;
+    left: 100px;
+}
+
+.circle
+{
+    position: relative;
+    background-color: unset;
+}
+
+.how_card .h3,
+.how_card p
+{
+    color: #FEFCF7;
+}
+
+
+.order .summary
+{
+    width: 255px;
+}
+
+.summary_item
+{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+    
+}
+
+.summary_item:nth-child(1)
+{
+    padding-top: 0;
+}
+.summary_item:nth-last-child(1)
+{
+    border: 0;
+    padding-bottom: 0;
+}
+
+.summary_item_content
+{
+    display: flex;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+.summary_item_content:hover
+{
+    opacity: 0.6;
+}
+.number_item
+{
+    margin-right: 29px;
+    color: rgba(131, 136, 143, 1) !important;
+}
+
+
+.title_item
+{
+    color: rgba(51, 61, 75, 1) !important;
+}
+
+.configuration
+{
+    padding-left: 125px;
+    flex: 1;
+}
+
+.configuration_container
+{
+    margin-bottom: 88px;
+}
+
+.configuration_title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.configuration_title:hover svg path
+{
+    fill: #66D2CF;
+}
+
+.configuration_options
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.order_summary
+{
+    height: 208px;
+    background-color: #2C343E;
+    border-radius: 10px;
+    padding-left: 64px;
+    padding-right: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.order_summary p
+{
+    text-transform: uppercase;
+    color: #FFF;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.order_summary .h4
+{
+    color: #FFF;
+    line-height: 40px;
+}
+
+.order_summary .h4 span
+{
+    color: #0E8784;
+}
+
+.create
+{
+    display: flex;
+    justify-content: flex-end;
+}
