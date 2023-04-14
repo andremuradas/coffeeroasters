@@ -109,6 +109,14 @@
 {
     opacity: 0.6;
 }
+
+.summary_item_content_disable
+{
+    display: flex;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
 .number_item
 {
     margin-right: 29px;
@@ -145,9 +153,18 @@
     fill: #66D2CF;
 }
 
-.configuration_options
+.configuration_title_disabled
 {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.configuration_options
+{
+    display: none;
     justify-content: space-between;
     margin-top: 56px;
 }
@@ -173,7 +190,8 @@
     margin-bottom: 8px;
 }
 
-.order_summary .h4
+.order_summary .h4,
+.order_summary .h4 .show
 {
     color: #FFF;
     line-height: 40px;
@@ -188,4 +206,10 @@
 {
     display: flex;
     justify-content: flex-end;
+}
+
+
+.number_item_checked
+{
+    color: #0E8784 !important;
 }

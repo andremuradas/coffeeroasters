@@ -70,158 +70,213 @@
                 <div class="summary">
                     <div class="summary_item">
                         <div class="summary_item_content">
-                            <h4 class="number_item number_item_inactive h4">01</h4>
+                            <h4 id="preferencesSumary" class="number_item number_item_inactive h4">01</h4>
                             <p class="title_item title_item_inactive h4">Preferences</p>
                         </div>
                     </div>
 
                     <div class="summary_item">
                         <div class="summary_item_content">
-                            <p class="number_item number_item_inactive h4">02</p>
+                            <p id="beanTypeSumary" class="number_item number_item_inactive h4">02</p>
                             <p class="title_item title_item_inactive  h4">Bean Type</p>
                         </div>
                     </div>
 
                     <div class="summary_item">
                         <div class="summary_item_content">
-                            <p class="number_item number_item_inactive h4">03</p>
+                            <p id="quantitySumary" class="number_item number_item_inactive h4">03</p>
                             <p class="title_item title_item_inactive  h4">Quantity</p>
                         </div>
                     </div>
 
                     <div class="summary_item">
                         <div class="summary_item_content">
-                            <p class="number_item number_item_inactive h4">04</p>
+                            <p id="grindSumary" class="number_item number_item_inactive h4">04</p>
                             <p class="title_item title_item_inactive  h4">Grind Option</p>
                         </div>
                     </div>
 
                     <div class="summary_item">
                         <div class="summary_item_content">
-                            <p class="number_item number_item_inactive h4">05</p>
+                            <p  id="deliveriesSumary"class="number_item number_item_inactive h4">05</p>
                             <p class="title_item title_item_inactive  h4">Deliveries</p>
                         </div>
                     </div>
                 </div>
                 <div class="configuration">
                     <div class="configuration_container">
-                        <div class="configuration_title">
+                        <div id="preferences" class="configuration_title">
                             <h2 class="h2">How do you drink your coffee?</h2>
                             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
                         </div>
-                        <div class="configuration_options">
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Capsule</h4>
-                                <p>Compatible with Nespresso systems and similar brewers</p>
-                            </div>
-                            
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Filter</h4>
-                                <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                            </div>
+                        <div id="preferencesOptions" class="configuration_options">
 
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Espresso</h4>
-                                <p>Dense and finely ground beans for an intense, flavorful experience</p>
-                            </div>
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="preferences" id="capsule">
+                                <span class="checkmark">
+                                    <h4 class="h4">Capsule</h4>
+                                    <p>Compatible with Nespresso systems and similar brewers</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="preferences" id="filter">
+                                <span class="checkmark">
+                                    <h4 class="h4">Filter</h4>
+                                    <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="preferences" id="espresso">
+                                <span class="checkmark">
+                                    <h4 class="h4">Espresso</h4>
+                                    <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                                </span>
+                            </label>
+
+
                         </div>
                     </div>
 
                     <div class="configuration_container">
-                        <div class="configuration_title">
+                        <div id="beanType" class="configuration_title">
                             <h2 class="h2">What type of coffee?</h2>
                             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
                         </div>
-                        <div class="configuration_options">
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Single Origin</h4>
-                                <p>Distinct, high quality coffee from a specific family-owned farm</p>
-                            </div>
-                            
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Decaf</h4>
-                                <p>Just like regular coffee, except the caffeine has been removed</p>
-                            </div>
+                        <div id="beanTypeOptions" class="configuration_options">
 
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Blended</h4>
-                                <p>Combination of two or three dark roasted beans of organic coffees</p>
-                            </div>
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="beanType">
+                                <span class="checkmark">
+                                    <h4 class="h4">Single Origin</h4>
+                                    <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="beanType">
+                                <span class="checkmark">
+                                    <h4 class="h4">Decaf</h4>
+                                    <p>Just like regular coffee, except the caffeine has been removed</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="beanType">
+                                <span class="checkmark">
+                                    <h4 class="h4">Blended</h4>
+                                    <p>Combination of two or three dark roasted beans of organic coffees</p>
+                                </span>
+                            </label>
+
                         </div>
                     </div>
 
                     <div class="configuration_container">
-                        <div class="configuration_title">
+                        <div id="quantity" class="configuration_title">
                             <h2 class="h2">How much would you like?</h2>
                             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
                         </div>
-                        <div class="configuration_options">
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">250g</h4>
-                                <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                            </div>
-                            
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">500g</h4>
-                                <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-                            </div>
+                        <div id="quantityOptions" class="configuration_options">
 
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">1000g</h4>
-                                <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
-                            </div>
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="quantity">
+                                <span class="checkmark">
+                                    <h4 class="h4">250g</h4>
+                                    <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="quantity">
+                                <span class="checkmark">
+                                    <h4 class="h4">500g</h4>
+                                    <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="quantity">
+                                <span class="checkmark">
+                                    <h4 class="h4">1000g</h4>
+                                    <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                </span>
+                            </label>
+
                         </div>
                     </div>
 
                     <div class="configuration_container">
-                        <div class="configuration_title">
+                        <div id="grind" class="configuration_title">
                             <h2 class="h2">Want us to grind them?</h2>
                             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
                         </div>
-                        <div class="configuration_options">
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Wholebean</h4>
-                                <p>Best choice if you cherish the full sensory experience</p>
-                            </div>
-                            
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Filter</h4>
-                                <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                            </div>
+                        <div id="grindOptions" class="configuration_options">
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="grind">
+                                <span class="checkmark">
+                                    <h4 class="h4">Wholebean</h4>
+                                    <p>Best choice if you cherish the full sensory experience</p>
+                                </span>
+                            </label>
 
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Cafetiére</h4>
-                                <p>Course ground beans specially suited for french press coffee</p>
-                            </div>
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="grind">
+                                <span class="checkmark">
+                                    <h4 class="h4">Filter</h4>
+                                    <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="grind">
+                                <span class="checkmark">
+                                    <h4 class="h4">Cafetiére</h4>
+                                    <p>Course ground beans specially suited for french press coffee</p>
+                                </span>
+                            </label>
+
+
                         </div>
                     </div>
 
                     <div class="configuration_container">
-                        <div class="configuration_title">
+                        <div id="deliveries" class="configuration_title">
                             <h2 class="h2">How often should we deliver?</h2>
                             <svg width="19" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" fill="#0E8784" fill-rule="nonzero"/></svg>
                         </div>
-                        <div class="configuration_options">
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Every week</h4>
-                                <p>$7.20 per shipment. Includes free first-class shipping.</p>
-                            </div>
-                            
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Every 2 weeks</h4>
-                                <p>$9.60 per shipment. Includes free priority shipping.</p>
-                            </div>
+                        <div id="deliveriesOptions" class="configuration_options">
 
-                            <div class="big_selection_option_default">
-                                <h4 class="h4">Every month</h4>
-                                <p>$12.00 per shipment. Includes free priority shipping.</p>
-                            </div>
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="deliveries">
+                                <span class="checkmark">
+                                    <h4 class="h4">Every week</h4>
+                                    <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="deliveries">
+                                <span class="checkmark">
+                                    <h4 class="h4">Every 2 weeks</h4>
+                                    <p>$9.60 per shipment. Includes free priority shipping.</p>
+                                </span>
+                            </label>
+
+                            <label class="big_selection_option_default">
+                                <input type="radio" name="deliveries">
+                                <span class="checkmark">
+                                    <h4 class="h4">Every month</h4>
+                                    <p>$12.00 per shipment. Includes free priority shipping.</p>
+                                </span>
+                            </label>
                         </div>
                     </div>
 
                     <div class="order_summary">
                         <p>Order Summary</p>
-                        <h4 class="h4">“I drink my coffee using <span>_____</span>, with a <span>_____</span> type of bean. <span>_____</span> , sent to me <span>_____</span>.”</h4>
+                        <h4 class="h4">“I drink my coffee using <span>_____</span>, with a <span>_____</span> , type of bean. <span>_____</span> , <span class="show">ground ala <span>_____</span> , </span>sent to me <span>_____</span>.”</h4>
                     </div>
 
                     <div class="create">

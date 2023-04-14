@@ -103,33 +103,60 @@ body
 
 .big_selection_option_default
 {
+    position: relative;
     width: 228px;
     height: 250px;
     background-color: #F4F1EB;
     border-radius: 8px;
-    padding-top: 28px;
-    padding-left: 26px;
-    padding-right: 26px;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .big_selection_option_default .h4
 {
     margin-bottom: 24px;
 }
+  
+/* Hide the browser's default radio button */
+.big_selection_option_default input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
 
-.big_selection_option_default:hover
+/* Create a custom radio button */
+.checkmark 
+{
+    position: absolute;
+    padding-top: 28px;
+    padding-left: 26px;
+    padding-right: 26px;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+/* On mouse-over, add a grey background color */
+.big_selection_option_default:hover input ~ .checkmark 
 {
     background-color: #FDD6BA;
 }
 
-.big_selection_option_active
+/* When the radio button is checked, add a blue background */
+.big_selection_option_default input:checked ~ .checkmark,
+.big_selection_option_default input:checked ~ .checkmark .h4
 {
     background-color: #0E8784;
+    color: #FFFFFF;
 }
 
-.big_selection_option_active,
-.big_selection_option_active .h4
+.flex
 {
-    color: #FFFFFF;
+    display: flex;
 }
