@@ -4,13 +4,13 @@ title.forEach(idTitle =>
     {
         idTitle.addEventListener('click', () => 
         {
-            document.getElementById(idTitle.id+"Options").classList.toggle("flex");
-            
             if(document.getElementById(idTitle.id).classList.contains("configuration_title"))
             {
+                document.getElementById(idTitle.id+"Options").classList.toggle("flex");
                 document.getElementById(idTitle.id).children[1].classList.toggle("arrow_up");
             }
-
+            
+        
         });
     });
 
@@ -22,7 +22,7 @@ inputRadio.forEach(nameRadio =>
 {
     nameRadio.addEventListener('click', () =>
     {
-        document.querySelector('#'+nameRadio.name+"Sumary").classList.add("number_item_checked");
+        document.querySelector('#'+nameRadio.name+"SummaryNumber").classList.add("number_item_checked");
         grindInactive()
     });
 });
@@ -33,25 +33,37 @@ function grindInactive()
 {
     if(document.querySelector('input[id="capsule"]').checked)
     {
+        //Hide of select grind options
         document.querySelector('#grindOptions').style.display = "none";
-        document.querySelector('#grindSumary').classList.remove("number_item_checked");
-        document.querySelectorAll('.summary_item_content')[3].classList.replace("summary_item_content","summary_item_content_disable");
+        document.querySelector('#grindOptions').classList.remove("flex");
 
+        //Remove color of number summary
+        document.querySelector('#grindSummaryNumber').classList.remove("number_item_checked");
+
+        //Disable sumary item
+        document.querySelector('#grindSummary').classList.replace("summary_item_content","summary_item_content_disable");
+
+        //Clean input radio from grind section
         let inputRarioGrind = document.querySelectorAll('input[name="grind"]');
         inputRarioGrind.forEach(e =>
         {
             e.checked = false
         });
 
+        //Disable grind title
         document.querySelectorAll('.configuration_container')[3].children[0].classList.replace("configuration_title","configuration_title_disabled");
+
+        //Arrow down
+        document.querySelector("#grind").children[1].classList.remove("arrow_up");
     }
     else
     {
+        //Remove style to hide grind options
         document.querySelector('#grindOptions').removeAttribute("style");
         
-        if(document.querySelectorAll('.summary_item')[3].children[0].classList.contains("summary_item_content_disable"))
+        if(document.querySelector('#grindSummary').classList.contains("summary_item_content_disable"))
         {
-            document.querySelector('.summary_item_content_disable').classList.replace("summary_item_content_disable","summary_item_content");
+            document.querySelector('#grindSummary').classList.replace("summary_item_content_disable","summary_item_content");
         }
 
 
