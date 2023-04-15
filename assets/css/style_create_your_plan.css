@@ -169,6 +169,11 @@
     margin-top: 56px;
 }
 
+#withCapsule
+{
+    display: none;
+}
+
 .order_summary
 {
     height: 208px;
@@ -182,6 +187,7 @@
     margin-bottom: 40px;
 }
 
+
 .order_summary p
 {
     text-transform: uppercase;
@@ -190,8 +196,7 @@
     margin-bottom: 8px;
 }
 
-.order_summary .h4,
-.order_summary .h4 .show
+.order_summary .h4
 {
     color: #FFF;
     line-height: 40px;

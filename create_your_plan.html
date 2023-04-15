@@ -147,7 +147,7 @@
                         <div id="beanTypeOptions" class="configuration_options">
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="beanType">
+                                <input type="radio" name="beanType" id="Single Origin">
                                 <span class="checkmark">
                                     <h4 class="h4">Single Origin</h4>
                                     <p>Distinct, high quality coffee from a specific family-owned farm</p>
@@ -276,7 +276,10 @@
 
                     <div class="order_summary">
                         <p>Order Summary</p>
-                        <h4 class="h4">“I drink my coffee using <span>_____</span>, with a <span>_____</span> , type of bean. <span>_____</span> , <span class="show">ground ala <span>_____</span> , </span>sent to me <span>_____</span>.”</h4>
+                        <h4 id="noCapsule" class="h4">“I drink my coffee as <span id="preferencesOrder">_____</span>, with a <span id="beanTypeOrder">_____</span> type of bean. <span id="quantityOrder">_____</span> ground ala <span id="grindOrder">_____</span>, </span>sent to me <span id="deliveriesOrder">_____</span>.”</h4>
+
+                        <h4 id="withCapsule" class="h4">“I drink my coffee using <span id="preferencesOrder">_____</span>, with a <span id="beanTypeOrder">_____</span> type of bean. <span id="quantityOrder">_____</span>, </span>sent to me <span id="deliveriesOrder">_____</span>.”</h4>
+
                     </div>
 
                     <div class="create">
