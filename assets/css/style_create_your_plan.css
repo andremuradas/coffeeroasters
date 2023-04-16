@@ -196,11 +196,18 @@
     margin-bottom: 8px;
 }
 
-.order_summary .h4
+.order_summary .h4,
+.order_summary .h4 .noCapsule,
+.order_summary .h4 .withCapsule
 {
     color: #FFF;
     line-height: 40px;
 }
+.hide
+{
+    display: none;
+}
+
 
 .order_summary .h4 span
 {

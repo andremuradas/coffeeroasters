@@ -147,7 +147,7 @@
                         <div id="beanTypeOptions" class="configuration_options">
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="beanType" id="Single Origin">
+                                <input type="radio" name="beanType" id="singleOrigin">
                                 <span class="checkmark">
                                     <h4 class="h4">Single Origin</h4>
                                     <p>Distinct, high quality coffee from a specific family-owned farm</p>
@@ -155,7 +155,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="beanType">
+                                <input type="radio" name="beanType" id="decaf">
                                 <span class="checkmark">
                                     <h4 class="h4">Decaf</h4>
                                     <p>Just like regular coffee, except the caffeine has been removed</p>
@@ -163,7 +163,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="beanType">
+                                <input type="radio" name="beanType" id="blended">
                                 <span class="checkmark">
                                     <h4 class="h4">Blended</h4>
                                     <p>Combination of two or three dark roasted beans of organic coffees</p>
@@ -181,7 +181,7 @@
                         <div id="quantityOptions" class="configuration_options">
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="quantity">
+                                <input type="radio" name="quantity" id="ag">
                                 <span class="checkmark">
                                     <h4 class="h4">250g</h4>
                                     <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
@@ -189,7 +189,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="quantity">
+                                <input type="radio" name="quantity" id="bg">
                                 <span class="checkmark">
                                     <h4 class="h4">500g</h4>
                                     <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
@@ -197,7 +197,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="quantity">
+                                <input type="radio" name="quantity" id="cg">
                                 <span class="checkmark">
                                     <h4 class="h4">1000g</h4>
                                     <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
@@ -214,7 +214,7 @@
                         </div>
                         <div id="grindOptions" class="configuration_options">
                             <label class="big_selection_option_default">
-                                <input type="radio" name="grind">
+                                <input type="radio" name="grind" id="wholebean">
                                 <span class="checkmark">
                                     <h4 class="h4">Wholebean</h4>
                                     <p>Best choice if you cherish the full sensory experience</p>
@@ -222,7 +222,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="grind">
+                                <input type="radio" name="grind" id="filterGrind">
                                 <span class="checkmark">
                                     <h4 class="h4">Filter</h4>
                                     <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
@@ -230,7 +230,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="grind">
+                                <input type="radio" name="grind" id="cafetiere">
                                 <span class="checkmark">
                                     <h4 class="h4">Cafetiére</h4>
                                     <p>Course ground beans specially suited for french press coffee</p>
@@ -249,7 +249,7 @@
                         <div id="deliveriesOptions" class="configuration_options">
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="deliveries">
+                                <input type="radio" name="deliveries" id="everyWeek">
                                 <span class="checkmark">
                                     <h4 class="h4">Every week</h4>
                                     <p>$7.20 per shipment. Includes free first-class shipping.</p>
@@ -257,7 +257,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="deliveries">
+                                <input type="radio" name="deliveries" id="everyTwoWeeks">
                                 <span class="checkmark">
                                     <h4 class="h4">Every 2 weeks</h4>
                                     <p>$9.60 per shipment. Includes free priority shipping.</p>
@@ -265,7 +265,7 @@
                             </label>
 
                             <label class="big_selection_option_default">
-                                <input type="radio" name="deliveries">
+                                <input type="radio" name="deliveries" id="everyMonth">
                                 <span class="checkmark">
                                     <h4 class="h4">Every month</h4>
                                     <p>$12.00 per shipment. Includes free priority shipping.</p>
@@ -276,9 +276,8 @@
 
                     <div class="order_summary">
                         <p>Order Summary</p>
-                        <h4 id="noCapsule" class="h4">“I drink my coffee as <span id="preferencesOrder">_____</span>, with a <span id="beanTypeOrder">_____</span> type of bean. <span id="quantityOrder">_____</span> ground ala <span id="grindOrder">_____</span>, </span>sent to me <span id="deliveriesOrder">_____</span>.”</h4>
+                        <h4 class="h4">“I drink my coffee <span class="h4 noCapsule">as </span><span class="h4 withCapsule hide">using </span><span id="preferencesOrder">_____</span>, with a <span id="beanTypeOrder">_____</span> type of bean. <span id="quantityOrder">_____</span> <span class="h4 noCapsule"> ground ala </span><span class="h4 withCapsule hide"> </span> <span id="grindOrder">_____</span>, </span>sent to me <span id="deliveriesOrder">_____</span>.”</h4>
 
-                        <h4 id="withCapsule" class="h4">“I drink my coffee using <span id="preferencesOrder">_____</span>, with a <span id="beanTypeOrder">_____</span> type of bean. <span id="quantityOrder">_____</span>, </span>sent to me <span id="deliveriesOrder">_____</span>.”</h4>
 
                     </div>
 

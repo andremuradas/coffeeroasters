@@ -32,16 +32,15 @@ inputRadio.forEach(nameRadio =>
         //Call function
         grindInactive();
 
+        order(nameRadio.id, nameRadio.name);
         //Complete the order summary
         if(nameRadio.id == "capsule")
         {
-            document.querySelector('#noCapsule').style.display = "none";
-            document.querySelector('#withCapsule').style.display = "block";
+            
         }
         else
         {
-            document.querySelector('#noCapsule').style.display = "block";
-            document.querySelector('#withCapsule').style.display = "none";
+            
         }
 
 
@@ -157,10 +156,47 @@ inputName.forEach(inputNameGroup =>
         {
             //console.log(inputNameGroup.name);
             //console.log(inputNameGroup.id);
-            document.querySelectorAll('#'+inputNameGroup.name+'Order')[0].innerHTML = inputNameGroup.parentElement.children[1].children[0].innerHTML;
-            document.querySelectorAll('#'+inputNameGroup.name+'Order')[1].innerHTML = inputNameGroup.parentElement.children[1].children[0].innerHTML;
+            
         });
     });
 
 
 
+function order(id, name)
+{
+    //let nameOrder = document.querySelector('#'+id).parentElement.children[1].children[0].innerHTML;
+    if(name == "preferences")
+    {
+        /*
+        console.log(id);
+        console.log(name);
+        console.log("Ciclou em preferences");
+        */
+        if(id == "capsule")
+        {
+            console.log("Ciclou em preferences");
+            console.log("Clicou em capsule");
+            let withCapsule = document.querySelector('.withCapsule');
+            withCapsule.forEach(a => 
+                {
+                    console.log(a);
+
+                });
+        }
+        else
+        {
+            console.log("Ciclou em preferences");
+            console.log("Não clicou em capsule");
+        }
+        
+    }
+    else
+    {
+        /*
+        console.log(id);
+        console.log(name);
+        console.log("Não ciclou em preferences");
+        */
+       console.log("Não clicou em preferences");
+    }
+}
