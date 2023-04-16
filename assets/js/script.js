@@ -33,16 +33,7 @@ inputRadio.forEach(nameRadio =>
         grindInactive();
 
         order(nameRadio.id, nameRadio.name);
-        //Complete the order summary
-        if(nameRadio.id == "capsule")
-        {
-            
-        }
-        else
-        {
-            
-        }
-
+        button(nameRadio);
 
         //Show the order button
         
@@ -147,16 +138,15 @@ function grindInactive()
 
 
 
-//Identifying option selected
+//Identifying option selected and send the name to Order Summary section
 let inputName = document.querySelectorAll('input');
 
 inputName.forEach(inputNameGroup =>
     {
+        let nameSelection = document.querySelector('#'+inputNameGroup.id).parentElement.children[1].children[0].innerHTML;
         inputNameGroup.addEventListener('click', () => 
         {
-            //console.log(inputNameGroup.name);
-            //console.log(inputNameGroup.id);
-            
+            document.querySelector('#'+inputNameGroup.name+'Order').innerHTML = nameSelection;
         });
     });
 
@@ -164,39 +154,62 @@ inputName.forEach(inputNameGroup =>
 
 function order(id, name)
 {
-    //let nameOrder = document.querySelector('#'+id).parentElement.children[1].children[0].innerHTML;
     if(name == "preferences")
     {
-        /*
-        console.log(id);
-        console.log(name);
-        console.log("Ciclou em preferences");
-        */
-        if(id == "capsule")
-        {
-            console.log("Ciclou em preferences");
-            console.log("Clicou em capsule");
-            let withCapsule = document.querySelector('.withCapsule');
-            withCapsule.forEach(a => 
+        let withCapsule = document.querySelectorAll('.withCapsule');
+        let noCapsule = document.querySelectorAll('.noCapsule');
+        withCapsule.forEach(a => 
+            {
+                if(id == "capsule")
                 {
-                    console.log(a);
+                    a.classList.remove("hide");
+                }
+                else
+                {
+                    a.classList.add("hide");
+                }
+            });
 
-                });
-        }
-        else
+        noCapsule.forEach(b => 
+            {
+                if(id == "capsule")
+                {
+                    b.classList.add("hide");
+                }
+                else
+                {
+                    b.classList.remove("hide");
+                }
+            });
+    }
+
+}
+
+
+function button(nameRadio)
+{
+    
+    if(nameRadio.id == "capsule")
+    {
+        let nameCheck = document.querySelectorAll('input[name="preferences"]');
+        nameCheck.forEach(a => 
         {
-            console.log("Ciclou em preferences");
-            console.log("Não clicou em capsule");
-        }
-        
+            if(a.checked = true)
+            {
+                console.log(nameRadio.name);
+            }
+        });
     }
     else
     {
-        /*
-        console.log(id);
-        console.log(name);
-        console.log("Não ciclou em preferences");
-        */
-       console.log("Não clicou em preferences");
+        let nameCheck = document.querySelectorAll('input[name="preferences"]');
+        nameCheck.forEach(a => 
+        {
+            if(a.checked = true)
+            {
+                console.log(nameRadio.name);
+            }
+        });
     }
+    //console.log(nameRadio);
 }

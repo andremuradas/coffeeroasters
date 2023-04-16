@@ -209,7 +209,8 @@
 }
 
 
-.order_summary .h4 span
+.order_summary .h4 span,
+#grindOrder
 {
     color: #0E8784;
 }
