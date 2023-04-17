@@ -210,6 +210,7 @@
 
 
 .order_summary .h4 span,
+.order_sumary_resume .h4 span,
 #grindOrder
 {
     color: #0E8784;
@@ -225,4 +226,79 @@
 .number_item_checked
 {
     color: #0E8784 !important;
+}
+
+.order_bg
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.order_sumary_resume
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    height: 597px;
+
+}
+
+.order_sumary_resume .title
+{
+    padding-left: 55px;
+    padding-right: 55px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: inherit;
+    height: 136px;
+    background-color: #333D4B;
+    border-radius: 8px 8px 0 0;
+}
+
+.order_sumary_resume .container
+{
+    padding-top: 61px;
+    padding-left: 55px;
+    padding-right: 55px;
+    width: inherit;
+    height: 461px;
+    background-color: #FEFCF7;
+    
+    border-radius: 0 0 8px 8px;
+}
+
+.order_sumary_resume .container .h4
+{
+    color: #83888F;
+    line-height: 40px;
+}
+
+
+.order_sumary_resume .container p
+{
+    margin-top: 3px;
+    width: 428px;
+}
+
+.order_footer
+{
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order_footer .h3
+{
+    color: #333D4B;
 }

@@ -97,6 +97,7 @@ inputName.forEach(inputNameGroup =>
         inputNameGroup.addEventListener('click', () => 
         {
             document.querySelector('#'+inputNameGroup.name+'Order').innerHTML = nameSelection;
+            document.querySelector('#'+inputNameGroup.name+'OrderResume').innerHTML = nameSelection;
         });
     });
 
@@ -207,10 +208,31 @@ function button(nameRadio)
 
         console.log("Without capsule "+sum);
 
-
     }
-    
 
-        
+}
 
+
+let createButton = document.querySelector('#createButton');
+createButton.addEventListener('click', openModal);
+
+
+
+function openModal()
+{
+    if(createButton.classList.contains("main_button_default"))
+    {
+        document.querySelector('.order_bg').style.display = "block";
+        document.querySelector('.order_sumary_resume').style.display = "block";
+    }
+}
+
+
+let bg = document.querySelector('.order_bg');
+bg.addEventListener('click', closeBg);
+
+function closeBg()
+{
+    document.querySelector('.order_bg').style.display = "none";
+    document.querySelector('.order_sumary_resume').style.display = "none";
 }

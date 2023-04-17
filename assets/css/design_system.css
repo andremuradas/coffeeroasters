@@ -76,6 +76,7 @@ body
 .main_button_default
 {
     background-color: #0E8784;
+    cursor: pointer;
 }
 
 .main_button_default:hover
