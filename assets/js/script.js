@@ -12,11 +12,7 @@ title.forEach(idTitle =>
         });
     });
 
-let preferencesCheck = 0;
-let beanTyoeCheck = 0;
-let quantityCheck = 0;
-let grindCheck = 0;
-let deliveriesCheck = 0;
+
 
 
 //Actions for inputs
@@ -35,52 +31,6 @@ inputRadio.forEach(nameRadio =>
         order(nameRadio.id, nameRadio.name);
         button(nameRadio);
 
-        //Show the order button
-        
-        if(nameRadio.name == "preferences")
-        {
-            preferencesCheck = 1;
-        }
-
-        if(nameRadio.name == "beanType")
-        {
-            beanTyoeCheck = 1;
-        }
-
-        if(nameRadio.name == "quantity")
-        {
-            quantityCheck = 1;
-        }
-
-        if(nameRadio.id !== "capsule")
-        {
-            if(nameRadio.name == "grind")
-            {
-                grindCheck = 1;
-            }
-            else
-            {
-                grindCheck = 0;
-            }
-        }
-        
-
-        if(nameRadio.name == "deliveries")
-        {
-            deliveriesCheck = 1;
-        }
-
-
-        if(nameRadio.id !== "capsule")
-        {
-            let sum = preferencesCheck + beanTyoeCheck + quantityCheck + grindCheck + deliveriesCheck
-            console.log(sum);
-        }       
-        else
-        {
-            let sum = preferencesCheck + beanTyoeCheck + quantityCheck + deliveriesCheck
-            console.log(sum);
-        }
 
     });
 });
@@ -186,30 +136,81 @@ function order(id, name)
 }
 
 
+let preferencesCheck = 0;
+let beanTyoeCheck = 0;
+let quantityCheck = 0;
+let grindCheck = 0;
+let deliveriesCheck = 0;
+
 function button(nameRadio)
 {
-    
-    if(nameRadio.id == "capsule")
+        
+    if(nameRadio.name == "preferences")
     {
-        let nameCheck = document.querySelectorAll('input[name="preferences"]');
-        nameCheck.forEach(a => 
+        preferencesCheck = 1;
+    }
+
+    if(nameRadio.name == "beanType")
+    {
+        beanTyoeCheck = 1;
+    }
+
+    if(nameRadio.name == "quantity")
+    {
+        quantityCheck = 1;
+    }
+
+    if(nameRadio.name == "grind")
+    {
+        grindCheck = 1;
+    }
+
+    if(nameRadio.name == "deliveries")
+    {
+        deliveriesCheck = 1;
+    }
+
+    if(document.querySelectorAll('input')[0].checked == true)
+    {
+        let sum = preferencesCheck + beanTyoeCheck + quantityCheck + deliveriesCheck;
+        if(sum == 4)
         {
-            if(a.checked = true)
+            if(document.querySelector('#createButton').classList.contains("main_button_disabled"))
             {
-                console.log(nameRadio.name);
+                document.querySelector('#createButton').classList.replace("main_button_disabled", "main_button_default");
             }
-        });
+
+            
+        }
+        console.log("With capsule "+sum);
+
     }
     else
     {
-        let nameCheck = document.querySelectorAll('input[name="preferences"]');
-        nameCheck.forEach(a => 
+        if(document.querySelector('#createButton').classList.contains("main_button_default"))
         {
-            if(a.checked = true)
+            document.querySelector('#createButton').classList.replace("main_button_default", "main_button_disabled");
+            grindCheck = 0
+        }
+
+
+
+        let sum = preferencesCheck + beanTyoeCheck + quantityCheck + grindCheck + deliveriesCheck;
+        if(sum == 5)
+        {
+            if(document.querySelector('#createButton').classList.contains("main_button_disabled"))
             {
-                console.log(nameRadio.name);
+                document.querySelector('#createButton').classList.replace("main_button_disabled", "main_button_default");
             }
-        });
+            
+        }
+
+        console.log("Without capsule "+sum);
+
+
     }
-    //console.log(nameRadio);
+    
+
+        
+
 }
