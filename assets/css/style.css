@@ -414,3 +414,28 @@ footer
 {
     display: block;
 }
+
+@media (max-width: 375px)
+{
+
+
+    .standard_width_2
+    {
+        max-width: 327px;
+    }
+
+    .menu
+    {
+        height: 76px;
+    }
+    
+    .menu img
+    {
+        width: 163px;
+    }
+
+    .menu .right nav
+    {
+        display: none;
+    }
+}
