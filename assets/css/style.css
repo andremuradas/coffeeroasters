@@ -139,7 +139,6 @@ footer
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-
     z-index: -1;
 
 }
@@ -168,8 +167,9 @@ footer
 
 .collection_card img
 {
-    width: inherit;
-    margin-bottom: 72px;
+    width: auto;
+    height: inherit;
+    margin-bottom: 0;
 }
 
 .collection_card h4
@@ -414,6 +414,85 @@ footer
 {
     display: block;
 }
+
+/*Tablet version*/
+@media (min-width: 768px) and (max-width: 1231px)
+{
+    body
+    {
+        padding-left: 39px;
+        padding-right: 39px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .menu
+    {
+        height: 119px;
+    }
+
+    .standard_width_2
+    {
+        max-width: 689px;
+    }
+
+    .standard_width_1
+    {
+        max-width: 689px;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+
+    .intro_container
+    {
+        height: 500px;
+        background-image: url(../images/home/tablet/image-hero-coffeepress.jpg);
+        background-size: cover;
+
+    }
+
+    .intro_container .h1
+    {
+        font-size: 48px;
+        line-height: 48px;
+        width: 398px;
+        margin-bottom: 24px;
+    }
+
+    .intro_container p
+    {
+        width: 398px;
+        margin-bottom: 40px;
+
+    }
+
+    .title_alternate_big
+    {
+        font-size: 96px !important;
+        line-height: 96px !important;
+    }
+
+    .collection_cards
+    {
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .collection_card
+    {
+        display: flex;
+        flex-direction: row;
+        width: 573px;
+        height: 193px;
+    }
+
+
+
+}
+
 
 @media (max-width: 375px)
 {
