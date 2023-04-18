@@ -478,7 +478,7 @@ footer
         flex-direction: column;
         justify-content: normal;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 45px;
     }
 
     .collection_card
@@ -487,9 +487,43 @@ footer
         flex-direction: row;
         width: 573px;
         height: 193px;
+        margin-bottom: 32px;
     }
 
+    .collection_card h4
+    {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    
+    .collection_card p
+    {
+        text-align: left;
+    }
 
+    .collection_card_description
+    {
+        width: 282px;
+        padding-left: 35px;
+    }
+
+    .collection.margin_bottom
+    {
+        margin-bottom: 144px;
+    }
+
+    .why_container
+    {
+        height: 573px;
+    }
+
+    .why_container .h2
+    {
+        font-size: 32px;
+        margin-top: 100px;
+        margin-bottom: 24px;
+        color: #FEFCF7;
+    }
 
 }
 
