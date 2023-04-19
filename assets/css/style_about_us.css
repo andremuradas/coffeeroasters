@@ -27,14 +27,21 @@
 
 }
 
-.commitment .left img
-{
-    border-radius: 8px;
-}
 .commitment
 {
     margin-bottom: 249px;
 }
+
+
+.commitment_img
+{
+    width: 445px;
+    height: 520px;
+    border-radius: 8px;
+    display: inline-block;
+    background-image: url(../images/about/desktop/image-commitment.jpg);
+}
+
 .commitment .right 
 {
     display: flex;
@@ -90,11 +97,14 @@
     position: relative;
 }
 
-.quality .right img
+.quality .right .quality_img
 {
+    width: 445px;
+    height: 474px;
     position: absolute;
     top: -89px;
     border-radius: 8px;
+    background-image: url(../images/about/desktop/image-quality.jpg);
 }
 
 .headquarters_container .h4
@@ -133,4 +143,383 @@
 .headquarters.margin_bottom
 {
     margin-bottom: 168px;
+}
+
+
+
+/*Tablet version*/
+@media (min-width: 768px) and (max-width: 1231px)
+{
+    body
+    {
+        padding-left: 39px;
+        padding-right: 39px;
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+
+    .menu_bg
+    {
+        top: 119px;
+    }
+    .menu
+    {
+        height: 119px;
+    }
+
+    .standard_width_2
+    {
+        max-width: 689px;
+    }
+
+    .standard_width_1
+    {
+        max-width: 689px;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .intro_about_us_container
+    {
+        height: 400px;
+        background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+        background-size: cover;
+
+    }
+
+    .intro_about_us_container .h2
+    {
+        font-size: 32px;
+        line-height: 40px;
+        width: 398px;
+        margin-bottom: 24px;
+    }
+
+    .intro_about_us_container p
+    {
+        width: 398px;
+    }
+
+    .intro_about_us.margin_bottom
+    {
+        margin-bottom: 144px;
+    }
+ 
+    .commitment.standard_width_1
+    {
+        width: 689px;
+        padding: 0;
+    }
+
+    .commitment_img
+    {
+        width: 281px;
+        height: 470px;
+        background-image: url(../images/about/tablet/image-commitment.jpg);
+    }
+
+    .commitment .right
+    {
+        padding-left: 11px;
+    }
+
+    .commitment .right .h2
+    {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 30px;
+        margin-top: -16px;
+    }
+
+    .commitment .right p
+    {
+        padding: 0;
+    }
+
+    .commitment.margin_bottom
+    {
+        margin-bottom: 297px;
+    }
+
+    .quality
+    {
+        height: 488px;
+    }
+
+    .quality .two_columns
+    {
+        flex-direction: column-reverse;
+    }
+
+    .quality .left
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quality .left h2
+    {
+        color: #FEFCF7;
+        margin-top: 225px;
+        margin-bottom: 24px;
+        font-size: 32px;
+    }
+
+
+
+    .quality .left p
+    {
+        width: 538px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    
+    .quality .right
+    {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .quality .right .quality_img
+    {
+        width: 573px;
+        height: 320px;
+        top: -160px;
+        background-image: url(../images/about/tablet/image-quality.jpg);
+    }
+
+    .quality.margin_bottom
+    {
+        margin-bottom: 145px;
+    }
+
+    .headquarters.standard_width_1
+    {
+        padding: 0;
+    }
+
+    .headquarters_card .h3
+    {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .headquarters_card
+    {
+        width: 390px;
+        margin-right: 0px;
+    }
+
+    .headquarters.margin_bottom
+    {
+        margin-bottom: 145px;
+    }
+
+
+}
+
+
+@media (max-width: 375px)
+{
+    .intro.margin_bottom
+    {
+        margin-bottom: 136px;
+    }
+
+    .intro_about_us_container
+    {
+        height: 400px;
+        background-image: url(../images/about/mobile/image-hero-whitecup.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .intro_about_us_container .h2
+    {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .intro_about_us_container p
+    {
+        width: 279px;
+        margin-bottom: 0px;
+        text-align: center;
+
+    }
+
+    .intro_about_us.margin_bottom
+    {
+        margin-bottom: 120px;
+    }
+
+    .commitment.standard_width_1
+    {
+        padding: 0;
+    }
+
+    .commitment .two_columns
+    {
+        flex-direction: column;
+    }
+
+    .commitment_img
+    {
+        width: 327px;
+        height: 400px;
+        border-radius: 8px;
+        display: inline-block;
+        background-image: url(../images/about/mobile/image-commitment.jpg);
+        background-size: cover;
+    }
+
+    .commitment .right .h2
+    {
+        font-size: 32px;
+        margin-top: 41px;
+    }
+
+    .commitment .right
+    {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commitment .right p
+    {
+        text-align: center;
+        padding: 0;
+    }
+
+    .commitment.margin_bottom
+    {
+        margin-bottom: 197px;
+    }
+
+    .quality
+    {
+        height: 509px;
+    }
+
+    .quality .two_columns
+    {
+        flex-direction: column-reverse;
+    }
+
+    .quality .left
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quality .left h2
+    {
+        color: #FEFCF7;
+        margin-top: 142px;
+        margin-bottom: 24px;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+
+
+    .quality .left p
+    {
+        width: 279px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    
+    .quality .right
+    {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .quality .right .quality_img
+    {
+        width: 279px;
+        height: 156px;
+        top: -78px;
+        background-image: url(../images/about/mobile/image-quality.jpg);
+        background-size: cover;        
+    }
+
+    .quality.margin_bottom
+    {
+        margin-bottom: 121px;
+    }
+
+
+    .headquarters.standard_width_1
+    {
+        padding: 0;
+    }
+
+    .headquarters_container .h4
+    {
+        text-align: center;
+    }
+
+    .headquarters_cards
+    {
+        flex-direction: column;
+    }
+
+    .headquarters_card_img
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .headquarters_card_img
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 48px;
+    }
+
+    
+
+    .headquarters_card .h3
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .headquarters_card
+    {
+        width: inherit;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .headquarters_card:nth-last-child(1)
+    {
+        margin-bottom: 0;
+    }
+
+    .headquarters.margin_bottom
+    {
+        margin-bottom: 120px;
+    }
+
+    
 }

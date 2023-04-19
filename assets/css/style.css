@@ -207,6 +207,7 @@ footer
 {
     background-image: linear-gradient(360deg, rgba(254,252,247,0), rgba(212,213,212,1));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -786,13 +787,13 @@ footer
 
     .menu_bg
     {
-        top: 76px;
+        top: 90px;
     }
      
 
     .menu
     {
-        height: 76px;
+        height: 90px;
     }
     .menu .left
     {
