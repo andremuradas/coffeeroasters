@@ -597,6 +597,10 @@ footer
     }
 
 
+    .how_cards
+    {
+        margin-bottom: 44px;
+    }
 
     .how_card
     {
@@ -626,9 +630,66 @@ footer
     {
         width: 211px;
     }
+
     .timeline
     {
         width: 470px;
+    }
+
+    .how.margin_bottom
+    {
+        margin-bottom: 144px;
+    }
+
+    .footer
+    {
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_container
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_container .col_01
+    {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 28px;
+    }
+
+    .footer_container .col_02
+    {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 60px;
+
+    }
+
+    .footer_container .col_02 ul li:nth-last-child(1) a
+    {
+        margin-right: 0;
+    }
+    
+    .footer_container .col_03
+    {
+        width: 100%;
+        height: auto;
+        flex: auto !important;
+        justify-content: center;
+    }
+
+
+    .col_03 a:nth-child(1)
+    {
+        margin-left: 0;
     }
 
 }
