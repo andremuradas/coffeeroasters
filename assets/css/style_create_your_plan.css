@@ -270,8 +270,9 @@
     padding-top: 61px;
     padding-left: 55px;
     padding-right: 55px;
+    padding-bottom: 56px;
     width: inherit;
-    height: 461px;
+    /*height: 461px;*/
     background-color: #FEFCF7;
     
     border-radius: 0 0 8px 8px;
@@ -301,4 +302,382 @@
 .order_footer .h3
 {
     color: #333D4B;
+}
+
+.order_footer_mobile
+{
+    display: none;
+}
+
+
+
+/*Tablet version*/
+@media (min-width: 768px) and (max-width: 1231px)
+{
+    body
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+
+    .menu_bg
+    {
+        top: 119px;
+    }
+    .menu
+    {
+        height: 119px;
+    }
+
+    .standard_width_2
+    {
+        max-width: 689px;
+    }
+
+    .standard_width_1
+    {
+        max-width: 689px;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .intro_create_plan_container
+    {
+        height: 400px;
+        background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+        background-size: cover;
+
+    }
+
+    .intro_create_plan_container .h1
+    {
+        font-size: 32px;
+        line-height: 40px;
+        width: 398px;
+        margin-bottom: 24px;
+    }
+
+    .intro_create_plan_container p
+    {
+        width: 398px;
+    }
+
+    .intro_create_plan.margin_bottom
+    {
+        margin-bottom: 144px;
+    }
+
+    .how
+    {
+        height: 640px;
+    }
+
+    .how.standard_width_2
+    {
+        max-width: 100%;
+    }
+
+    .how_cards.standard_width_1
+    {
+        padding: 0;
+        margin: auto;
+    }
+
+    .configuration_options
+    {
+        margin-top: 41px;
+    }
+
+    .timeline
+    {
+        left: 15px;
+    }
+
+    .how_card .h1
+    {
+        margin-bottom: 37px;
+    }
+
+    .how.margin_bottom
+    {
+        margin-bottom: 144px;
+    }
+
+    .order.standard_width_1
+    {
+        padding: 0;
+        margin-bottom: 144px;
+    }
+
+    .summary
+    {
+        display: none;
+    }
+
+    .configuration
+    {
+        padding: 0;
+    }
+
+    .configuration .h2
+    {
+        font-size: 32px;
+    }
+
+    .preferencesOptions
+    {
+        margin-top: 40px;
+    }
+
+    .big_selection_option_default
+    {
+        width: 223px !important;
+    }
+
+    .order_summary
+    {
+        margin-top: 144px;
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .create
+    {
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media (max-width: 375px)
+{
+
+    body
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+    .intro.margin_bottom
+    {
+        margin-bottom: 136px;
+    }
+
+    .intro_create_plan_container
+    {
+        height: 400px;
+        background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .intro_create_plan_container .h1
+    {
+        width: auto;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .intro_create_plan_container p
+    {
+        width: 279px;
+        margin-bottom: 0px;
+        text-align: center;
+
+    }
+
+    .intro_create_plan.margin_bottom
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+
+
+
+    .how
+    {
+        height: 1028px;
+    }
+
+    .how.standard_width_2
+    {
+        max-width: 100%;
+    }
+
+    .how_cards.standard_width_1
+    {
+        padding: 0;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .configuration_options
+    {
+        margin-top: 41px;
+    }
+
+    .timeline
+    {
+        display: none;
+    }
+
+    .how_card .h1
+    {
+        margin-bottom: 22px;
+    }
+
+    .how.margin_bottom
+    {
+        margin-bottom: 120px;
+    }
+
+    .order.standard_width_1
+    {
+        padding: 0;
+    }
+
+    .summary
+    {
+        display: none;
+    }
+
+    .configuration
+    {
+        padding: 0;
+    }
+
+    .configuration_container
+    {
+        margin-bottom: 94px;
+    }
+
+    .configuration .h2
+    {
+        width: 240px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .configuration_options 
+    {
+        margin-top: 30px;
+    }
+
+    .configuration_options
+    {
+        flex-direction: column;
+    }
+
+
+    .big_selection_option_default
+    {
+        width: 100% !important;
+        height: 140px !important;
+        margin-bottom: 16px;
+    }
+
+    .checkmark
+    {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .checkmark .h4
+    {
+        margin-bottom: 8px !important;
+    }
+
+    .order_summary
+    {
+        height: 338px;
+        margin-top: 105px;
+        margin-bottom: 56px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .create
+    {
+        justify-content: center;
+    }
+
+    .order.margin_bottom
+    {
+        margin-bottom: 120px;
+    }
+
+
+
+
+
+
+
+
+    .order_sumary_resume
+    {
+        width: 327px;
+        height: 597px;
+
+    }
+
+    .order_sumary_resume .title.h2
+    {
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 88px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .order_sumary_resume .container
+    {
+        padding-top: 41px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+
+    .order_sumary_resume .container p
+    {
+        margin-top: 0px;
+        width: 279px;
+    }
+
+    .order_footer .h3
+    {
+        display: none;
+    }
+
+    .order_footer
+    {
+        display: none;
+    }
+    .order_footer_mobile .main_button_default
+    {
+        width: 100%;
+    }
+
+    .order_footer_mobile
+    {
+        display: block;
+        margin-top: 24px;
+    }
+
 }
