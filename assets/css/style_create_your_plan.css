@@ -458,8 +458,8 @@
 
     body
     {
-        padding-left: 0px;
-        padding-right: 0px;
+        /*padding-left: 0px;
+        padding-right: 0px;*/
         font-size: 15px !important;
         line-height: 25px !important;
     }

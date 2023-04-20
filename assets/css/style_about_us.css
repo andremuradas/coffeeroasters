@@ -342,6 +342,7 @@
 
     .intro_about_us_container .h2
     {
+        width: 100%;
         font-size: 28px;
         line-height: 28px;
         margin-bottom: 24px;
